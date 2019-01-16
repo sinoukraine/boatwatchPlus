@@ -1,223 +1,149 @@
-
-<div class="page alarm_page" data-page="alarms.select">
-	<div class="navbar bg-boatwatch bw_top_shadow ">
+<div class="navbar bg-boatwatch no-border ">
     	<div class="navbar-inner">
     	  	<div class="left">
-            	<a href="#" class="link back "> <i class="icon icon-header-arrow-back" ></i></a>
+            	<a href="#" class="link back "> <i class="f7-icons" >chevron_left</i></a>
             </div>
-    		<div class="left navbar_title navbar_title_index">{{@global.LANGUAGE.ALARM_MSG06}}</div>
-    		<div class="right">    			
+    		<div class="center sliding  ">{{@global.LANGUAGE.ALARM_MSG06}}</div>
+    		<div class="right sliding">    			
     			
-    			<a href="#" class="link saveAlarm"><i class="icon icon-header-apply"></i></a>
+    			<a href="#" class="link saveAlarm"><i class="f7-icons icon-header-apply"></i></a>
     		</div>
     	</div>
   	</div>
-  	
-  	<div class="page-content">  
-  		<input type="hidden" name="Assets" value="{{Assets}}">
-  
-  				
-  		<div class="list-block no-hairlines alarm_list">
-	      	<ul>
-	      		<li class="item-divider alarm-radio-caption"><span class="color-gray">{{@global.LANGUAGE.COM_MSG39}}</span><span class="color-green ">{{@global.LANGUAGE.COM_MSG40}}</span></li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG02}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-bilge" value="131072" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-bilge" value="0" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG25}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-input1Low" value="524288" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-input1Low" value="0"  >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG17}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-lowBattery" value="512" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-lowBattery" value="0"  >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG05}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-geolock" value="1048" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-geolock" value="0"  >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG10}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-accOff" value="65536" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-accOff" value="0" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG11}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-accOn" value="32768" >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-accOn" value="0"  >
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>
-		        <li class="item-content">	          
-			        <div class="item-inner">
-			            <div class="item-title">{{@global.LANGUAGE.ALARM_MSG03}}</div>
-			            <div class="item-after">
-			            	<div class="list-block list-block-radio">
-								<ul class="row no-gutter">							    
-								    <li class="col-50 color-gray">
-									    <label class="label-radio item-content ">							        
-									        <input type="radio" name="radio-power" value="4">
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-									    </label>
-								    </li>							   
-								    <li class="col-50 color-green">
-								      	<label class="label-radio item-content ">
-									        <input type="radio" name="radio-power" value="0">
-									        <div class="item-media">
-									          	<i class="icon icon-form-radio"></i>
-									        </div>							       
-								      	</label>
-								    </li>							   
-								</ul>
-							</div>
-			            </div>
-			        </div>
-		        </li>	        
-	      	</ul>	     
-	    </div>
 
-		<div class="content-block">
-            <a href="tel:1300885461" target="_blank" class="external button button-fill button-big bg-boatwatch call-button">
-                <i class="f7-icons icon-other-call"></i>
-                {{@global.LANGUAGE.MENU_MSG11}}
-            </a>
-        </div>
-  	
+<div class="pages">
+	<div class="page alarm_page" data-page="alarms.select">
+		
+	  	
+	  	<div class="page-content">  
+	  		<input type="hidden" name="Assets" value="{{Assets}}">
+	  
+	  				
+	  		<div class="list-block no-hairlines media-list alarm_list">
+		      	<ul>
+		      		<li class="item-divider alarm-radio-caption"><span class="color-gray">{{@global.LANGUAGE.COM_MSG39}}</span><span class="color-green ">{{@global.LANGUAGE.COM_MSG40}}</span></li>
+			        <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG02}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-bilge" value="131072" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-bilge" value="0" >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG25}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-input1Low" value="524288" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-input1Low" value="0"  >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG17}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-lowBattery" value="512">
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-lowBattery" value="0"  >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG05}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-geolock" value="1048" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-geolock" value="0"  >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG10}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-accOff" value="65536" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-accOff" value="0" >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG11}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-accOn" value="32768" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-accOn" value="0"  >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li> 
+                    <li class="item-content">                       
+                        <div class="item-inner"> 
+                            <div class="item-title-row">
+                                <div class="item-title">{{@global.LANGUAGE.ALARM_MSG03}}</div>
+                                <div class="item-after align-items-center no-fastclick">
+                                	<span class="custom-radio-wrapper color-gray">
+                                		<input type="radio" name="radio-power" value="4" >
+                                	</span>
+									<span class="custom-radio-wrapper color-green">
+										<input type="radio" name="radio-power" value="0" >
+									</span>
+									
+                                </div>
+                            </div>                        
+                        </div>
+                    </li>         
+		      	</ul>	     
+		    </div>
+
+			<div class="content-block">
+                <a href="tel:1300885461" target="_blank" class="external button button-fill button-big bg-boatwatch call-button">
+                    <i class="f7-icons icon-other-call"></i>
+                    {{@global.LANGUAGE.MENU_MSG11}}
+                </a>
+            </div>  
+	  	
+		</div>
 	</div>
 </div>
