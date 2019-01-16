@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "XXXXXXX",
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-buildinfo": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.quiktrak.boatwatch"
+        }
+    },
+    "dependent_plugins": {}
+}
